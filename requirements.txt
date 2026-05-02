@@ -1,0 +1,80 @@
+# ----------------------------------------
+# CORE PYTHON / NOTEBOOK ENVIRONMENT
+# ----------------------------------------
+pip
+jupyter
+jupyterlab
+
+
+# ---------------------------
+# CORE DATA & VISUALIZATION
+# ---------------------------
+pandas
+numpy
+matplotlib
+seaborn
+
+# ---------------------------
+# CLASSICAL MACHINE LEARNING
+# ---------------------------
+scikit-learn
+
+# ---------------------------
+# DEEP LEARNING (PyTorch / TF)
+# ---------------------------
+torch
+torchvision
+tensorflow
+keras
+
+# ---------------------------
+# COMPUTER VISION (CV)
+# ---------------------------
+opencv-python
+
+# ---------------------------
+# NLP / LLMs / EMBEDDINGS
+# ---------------------------
+sentence-transformers
+transformers
+datasets
+timm
+accelerate
+
+# ---------------------------
+# VECTOR DATABASES / SIMILARITY SEARCH
+# ---------------------------
+faiss-cpu
+chromadb
+
+# ---------------------------
+# OCR
+# (Tesseract itself is a system-level install, NOT pip)
+# ---------------------------
+pytesseract
+opencv-python     # already included above
+
+# ---------------------------
+# AGENTS & ORCHESTRATION
+# ---------------------------
+langchain
+
+# ---------------------------
+# MULTIMODAL MODELS
+# ---------------------------
+# Vision-Language
+clip-anytorch           # open-source CLIP implementation
+
+# Audio Models
+librosa
+ffmpeg-python
+torch
+transformers            # already included above
+
+# Whisper
+openai-whisper
+
+# ---------------------------
+# OTHER UTILITIES
+# ---------------------------
+# json, os, pathlib are built-in – no need to install
