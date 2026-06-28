@@ -1,0 +1,63 @@
+Domain Knowledge
+
+Electricity Distribution
+
+Components Involved during tranmission from power plant to homes
+
+
+
+Data given in our dataset:
+Circuit Breaker 
+Substation 
+Switchgear 
+Transformer 
+Transmission line
+
+1. Power Plant
+2. Step-Up Transformer
+3. High Voltage Transmission Lines
+4. Substation
+5. Step-Down Transformer
+6. Distribution Feeders
+7. Local Distribution Transformer
+8. Homes / Industries
+
+Circuit Breaker
+- Protect the grid - isolate the problem
+	Fault causes:
+		Mechanical wear, contact degradation, control failures
+Substation
+	- Substation acts like a traffic junction for electricity
+
+Functions:
+	Voltage transformation
+	Power routing
+	Fault isolation
+	Grid monitoring
+
+Switchgear
+	- Control and isolate electrical equipment. You can think of switchgear as the "traffic controller" of the grid.
+	
+	Failure Causes
+		Arc flash
+		Insulation failure
+		Aging components
+
+Transformer
+	- Transformers change voltage levels.
+
+	Failure Causes
+		Insulation degradation
+		Oil contamination
+		Overheating
+		Moisture ingress
+		Overloading
+
+Transmission Line 
+	- Carry electricity over long distances.
+	Failure Causes
+		Storms
+		Lightning
+		Tree contact
+		Conductor damage
+		Tower collapse

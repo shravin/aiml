@@ -1,0 +1,27 @@
+Assignment 10:
+
+Write short answers:
+
+What does PCA optimize mathematically?
+Find the direction onto which the projected data has maximum variance.
+
+Why is variance used as a measure of “information”?
+What happens if features are not correlated — is PCA useful?
+Why do we standardize data before applying PCA?
+What is the difference between covariance and correlation in PCA context?
+How is PCA related to projection of data onto a new axis?
+Why are principal components orthogonal to each other?
+What does it mean to “rotate the coordinate system” in PCA?
+How does PCA reduce redundancy in features?
+Can principal components always be interpreted easily? Why or why not?
+What does a negative loading in a principal component indicate?
+If two features are highly correlated, how will PCA treat them?
+What does it mean if the first principal component explains 90% variance?
+Does PCA use output labels? What is the implication?
+When should PCA be avoided even if dimensionality is high?
+How does PCA affect model interpretability?
+Can PCA improve model performance always? Why not?
+What happens if all features have equal variance and no correlation?
+What if one feature has extremely large scale compared to others?
+Can PCA capture nonlinear relationships? Why or why not?
+Why might PCA fail in classification problems?
