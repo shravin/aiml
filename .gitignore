@@ -1,4 +1,4 @@
-classwork/
+# classwork/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -220,3 +220,9 @@ __marimo__/
 
 # my dirs
 capstone/draft
+
+classwork/04-03052026/NaiveBayes/IMDB.csv
+classwork/04-31052026/31052026 - CNN-20260531T044505Z-3-001.zip
+classwork/05-06062026/06062026 - CNN-20260606T143509Z-3-001.zip
+classwork/05-21062026/21062026- Autoencoders/Dataset/Datacod/tokenized_access_logs.csv
+classwork/05-21062026/21062026- Autoencoders/Dataset/Datacod/DataCoSupplyChainDataset.csv
