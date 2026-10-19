@@ -16,9 +16,9 @@ DEVICE_CHOICE = "auto"  # Choose "cpu", "cuda", or "auto".
 SEED = 42
 
 # Change these values to try different LoRA configurations and run lengths.
-LORA_RANK = 4
-LORA_ALPHA = 8
-TRAINING_STEPS = 30
+LORA_RANK = 8
+LORA_ALPHA = 16
+TRAINING_STEPS = 60
 
 LORA_DROPOUT = 0.0
 MAX_LENGTH = 96
