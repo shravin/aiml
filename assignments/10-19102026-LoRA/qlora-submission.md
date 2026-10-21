@@ -20,10 +20,36 @@ Why does total training memory exceed the size of the stored weights?
 Because training memory includes more than the stored weights: activations saved for backpropagation, gradients, optimizer states, temporary computation buffers, and sometimes higher-precision copies of weights. These can add substantially to the memory needed during training.
 
 Compare ranks 4 and 8 using a fresh model each time.
+---
+Comparison between 4 bit and 8 bit QLoRA
 
+
+| Measure | 8-bit | 4-bit | Difference |
+|---|---:|---:|---|
+| Quantized model footprint | 115.74 MiB | 95.49 MiB | 4-bit is 20.25 MiB smaller |
+| Peak training GPU memory | 281.02 MiB | 258.91 MiB | 4-bit is 22.11 MiB lower |
+| Evaluation loss (before → after) | 5.4733 → 5.0450 | 5.5552 → 5.0856 | Both improved |
+| Final perplexity | 155.24 | 161.67 | 8-bit is slightly lower |
+| Trainable LoRA parameters | 73,728 | 73,728 | Same |
+
+Findings: In these runs, 4-bit used less memory, while 8-bit finished with slightly better evaluation metrics. Both improved after LoRA training, and both verified that the frozen parameters stayed unchanged. The generated answers don’t show a clear qualitative winner.
 
 Compare LoRA and QLoRA - Is lower memory guaranteed to produce better accuracy?
 ---
 LoRA fine-tunes a model by freezing its original weights and training small low-rank adapter matrices. QLoRA does the same, but stores the frozen base weights in a quantized format, reducing memory use; adapters are still trained.
 
 Lower memory use does not guarantee better accuracy. Quantization can introduce small errors, and accuracy depends on factors like the model, data, and training setup. Lower memory may let you fine-tune a larger model or use a larger batch, which can help—but results need to be evaluated.
+
+Run the Python version of the notebook with:
+
+```bash
+python assignments/10-19102026-LoRA/qlora-8bit.py --device cpu
+```
+
+This runs the conceptual quantization exercise. To run QLoRA training on a supported NVIDIA GPU with the local DistilGPT-2 model:
+
+```bash
+python assignments/10-19102026-LoRA/qlora-8bit.py --device cuda
+```
+
+Use `--model-name` to specify a different local model directory. GPU training requires PyTorch, Transformers, PEFT, and bitsandbytes.
